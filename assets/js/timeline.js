@@ -28,7 +28,7 @@ openModalButtons.forEach(button => {
   })
 })
 
-$(document).on("click","a",function(e){
+$(document).on("click","a.timeline-link",function(e){
   e.preventDefault();
   var id = $(this).attr("href"),
       topSpace = 30;
@@ -37,6 +37,7 @@ $(document).on("click","a",function(e){
     scrollTop: $(id).offset().top - topSpace
   }, 800);
 });
+
 
 overlay.addEventListener('click', ()=>{
   const modals = document.querySelectorAll('.modal.active')

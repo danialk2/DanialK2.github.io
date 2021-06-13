@@ -52,22 +52,21 @@
 									<h1  style="text-transform: capitalize;">Job Allocation Recommender System Using Machine Learning<br />
 									</h1>
 									<p>An internship project at NXP Semiconductors using a machine learning approach to predict the amount of 
-										compute memory needed by jobs that are submitted to a Load Sharing Facility (LSF). </p>
+										compute memory needed by jobs that are submitted to a <abbr title="Load Sharing Facility">LSF</abbr></p>
 								</header>
 								<a class="image main"><img src="images/NXP.jpg" alt="" /></a>
 								<h3 id="problem">Project Overview</h3>
 								<p>NXP is a large semiconductor firm, which alongside developing cutting-edge products and solutions for Mobile, the Connected Car, Cyber Security
 									Portable & Wearable and the Internet of Things, they also provide license
 									environments and computational resources such as memory, CPU's and storage via cloud
-									technology to many end users around the globe. For this purpose, NXP uses LSF – Load Sharing Facility
-									- Software to allocate resources to their clients.</p>
+									technology to many end users around the globe. For this purpose, NXP uses <abbr title="Load Sharing Facility">LSF</abbr> Software to allocate resources to their clients.</p>
 								<p>In cloud and distributed computing, efficient task scheduling can have a major
 									impact on performance. Task schedulers receive the jobs to be computed, and
 									then dynamically make decisions about which network resources should be used for
 									each job and when they will be completed relative to other jobs. The network
 									consists of individual machines, each with finite CPU cores and memory.
 									Finding an optimal allocation of jobs to machines (such that throughput is
-									maximized, or total compute time for all jobs is minimized) is an NP-hard problem <a href="#foot">[1]</a>. This means that finding the absolute optimal solution for job allocation
+									maximized, or total compute time for all jobs is minimized) is an NP-hard problem <a href="#foot" class="timeline-link" style="color: blue;">[1]</a>. This means that finding the absolute optimal solution for job allocation
 									cannot be computed in polynomial time; as the number of jobs increases, the
 									computational overhead grows massively. Therefore, for these types of problems we rely on heuristic algorithms which allow us to produce close to optimal
 									solutions in a reasonable time.</p>
@@ -76,7 +75,8 @@
 									which can be measured by a number of related metrics including average waiting
 									time for a job. The approach is to improve the accuracy of resource specification,
 									which is a key parameter in the scheduling. Currently, the design engineers
-									make these resource estimates manually based on past experience. Naturally,
+									make these resource estimates manually based on past experience. This historical data is predominantly based on 
+									manual allocation which has immense potential for human error. Naturally,
 									this leads to non-optimal specification which has implications for performance:
 									under-specification of required resources can lead to delays as more resources
 									need to be allocated, or can lead to the job being outright terminated. Over-specification ties up resources which could have been used for other jobs, and
@@ -86,7 +86,7 @@
 									using machine learning models based on historical data. This is a sound foundation for further developments and improvements within NXP.  
 									
 								</p>
-								<p style="color:black;font-size:15px;" id="foot">[1] Definition: The complexity class of decision problems that are intrinsically harder than those that can be solved by a nondeterministic Turing machine in polynomial time <a href="https://en.wikipedia.org/wiki/NP-hardness">Wikipedia</a>.</p>
+								<p style="color:black;font-size:15px;" id="foot">[1] Definition: The complexity class of decision problems that are intrinsically harder than those that can be solved by a nondeterministic Turing machine in polynomial time <a  style="color: blue;" href="https://en.wikipedia.org/wiki/NP-hardness" target="_blank">Wikipedia</a>.</p>
 							</section>
 							
 
@@ -104,7 +104,7 @@
 									padding: 10px; 
 									border: 1px solid white; 
 									box-shadow: 10px 10px 5px grey;
-									margin: 10px;">Here you can find the path through my project in 6 phases. Each phase (usually 4 to 6 weeks long) has unique goals which we tried to achieve in multiple sprints.
+									margin: 10px;">Here you can find the path through my project in 6 phases. Each phase (usually 4 to 6 weeks long) has unique goals which we break down into multiple sprints.
 										 </p>
 								</div>
 								<div class="timeline">
@@ -122,10 +122,10 @@
 											<p>
 												The first phase of the assignment is an exploratory phase to get familiar with the data, the IT systems and
                                                 software tools (Splunk, AWS athena and AWS Sagemaker) and the problem domain. After the initial
-												introduction, I worked together with experts from DA -Data Analytics- and HPC -High Performance Computing- to have a closer look into the available
-												data sources (RTM, PA, FNM). The data analysis specialists have assisted our team in this stage to understand the
+												introduction, I worked together with experts from Data Analytics and <abbr title="High Performance Computing">HPC</abbr> to have a closer look into the available
+												data sources ( <abbr title="Recovery Termination Manager">RTM</abbr>  , <abbr title="Product Analysis">PA</abbr>, <abbr title="Floating Negative Multiply">FNM</abbr>). The data analysis specialists have assisted our team in this stage to understand the
 												structure of the data and the software tools. In parallel, existing solutions were researched to gain further understanding to the problem domain and analyze competitors.
-												<a style="color: blue;" href="#explore" >Click to see more!</a>
+												<a style="color: blue;" href="#explore" class="timeline-link">Click to see more!</a>
 											
 											</p>
 										
@@ -142,11 +142,11 @@
 											<d4 class="date">Week 5 - 8 </d4>
 											<h3>Profiling phase</h3>
 											<p>
-												The profiling phase aims to evaluate specific EDA -Electronic Design Automation- tools in combination with HW -Hardware- designers (along with another
-												relevant factor in consultation with the DA -Data Analytics- /HPC -High Performance Computing- domain experts) such that it is clear from the analysis
-												how muchHPC -High Performance Computing- resources the selected EDA tool requires. Also, during this phase, we chose a specific user and analyzed their
-												required resources by diving into their day-to-day jobs as submitted on LSF. We employ relatively simple techniques such as the 'moving average'
-												and 'linear regression', to predict their required memory allocation. <br/><a style="color: blue;" href="#explore" >Click to see more!</a>
+												The profiling phase aims to evaluate specific <abbr title="Electronic Design Automation">EDA</abbr> tools in combination with Hardware Designers (along with another
+												relevant factor in consultation with the Data Analytics /<abbr title="High Performance Computing">HPC</abbr> domain experts) such that it is clear from the analysis
+												how much <abbr title="High Performance Computing">HPC</abbr> resources the selected <abbr title="Electronic Design Automation">EDA</abbr>  tool requires. Also, during this phase, we chose a specific user and analyzed their
+												required resources by diving into their day-to-day jobs as submitted on <abbr title="Load Sharing Facility">LSF</abbr>. We employ relatively simple techniques such as the 'moving average'
+												and 'linear regression', to predict their required memory allocation. <br/><a style="color: blue;" href="#explore" class="timeline-link">Click to see more!</a>
 												
 											</p>
 										
@@ -171,12 +171,13 @@
 											<h3>Prediction Phase (Prototype V1)</h3>
 											<p>
 												The prediction phase was used to further employ the findings of the previous analysis by actively predicting
-												CPU, memory and EDA license usage for the selected EDA tools. During this phase, we build the first iteration of the model by experimenting with various algorithms such as 
+												CPU, memory and <abbr title="Electronic Design Automation">EDA</abbr>  license usage for the selected <abbr title="Electronic Design Automation">EDA</abbr>  tools.
+												 During this phase, we built the first iteration of the model by experimenting with various algorithms such as 
 												'RandomForest', 'Linear Regression' and etc. These models are trained 
-												and tested on the RTM dataset which consist of submitted and finished
+												and tested on the  <abbr title="Recovery Termination Manager">RTM</abbr>   dataset which consist of submitted and finished
 												jobs during the month of March 2021 with more than 2 million rows and about 110 different features.
-												We designed pipelines to prepare, clean and automatically select the best features of the data before feeding it into the models. After fine-tuning the models, the 'RandomForest' algorithm perfomed the best 
-												with a 64% r<sup>2</sup> score.  <a style="color: blue;" href="#prediction" >Click to see more!</a>
+												We designed pipelines to prepare <a style="color: blue;" href="#ref" class="timeline-link">[6]</a>, clean and automatically select the best features of the data before feeding it into the models. After fine-tuning the models, the 'RandomForest' algorithm performed the best 
+												with a 64% r<sup>2</sup> score.  <a style="color: blue;" href="#prediction" class="timeline-link" >Click to see more!</a>
 											</p>
 										
 										</div>
@@ -188,9 +189,9 @@
 											<d4 class="date">Week 15 - 17</d4>
 											<h3>Prediction Phase (Prototype V2)</h3>
 											<p>
-												The next challenge was to apply the model to a larger context, running it on data from the previous 6 months data with more than 14 million rows. We re-trained and fine-tuned the selected models
-												. In order to improve our accuracy and lower the error margin ('mae'), we built more features by reaching outside of the RTM dataset and
-											    applied different potential solutions to engineer the features which resulted in improvements. <a style="color: blue;" href="#prediction" >Click to see more!</a>
+												The next challenge was to apply the model to a larger context, running it on data accumulated from the previous 6 months with more than 14 million rows. We re-trained and fine-tuned the selected models
+												. In order to improve our accuracy and lower the  <abbr title="Mean Absolute Error">MAE</abbr>, we built more features by reaching outside of the  <abbr title="Recovery Termination Manager">RTM</abbr>   dataset and
+											    applied different potential solutions to engineer the features which resulted in improvements. <a style="color: blue;" href="#prediction" class="timeline-link" >Click to see more!</a>
 
 												
 											</p>
@@ -205,8 +206,8 @@
 											<h3>Optimization Phase (Testing)</h3>
 											<p>
 												During the optimization phase the insights from big data 
-												were applied in HPC -High Performance Computing- jobs. This phase involved active monitoring of the LSF job duration and resources to ensure that
-												our models are indeed delivering the expected results.<a style="color: blue;" href="#tad" >Click to see more!</a>
+												were applied in <abbr title="High Performance Computing">HPC</abbr> jobs. This phase involved active monitoring of the <abbr title="Load Sharing Facility">LSF</abbr> job duration and resources to ensure that
+												our models are indeed delivering the expected results.<a style="color: blue;" href="#tad" class="timeline-link" >Click to see more!</a>
 												
 											</p>
 										
@@ -220,7 +221,7 @@
 											<h3>Deployment Phase </h3>
 											<p>
 												After getting the model's approval during the testing phase, we built an architecture to fit the models into the job allocation progress. At the first stage,
-												the new architecture plan will be available to a specific group to further evaluate and improve the solution. <a style="color: blue;" href="#tad" >Click to see more!</a>
+												the new architecture plan will be available to a specific group to further evaluate and improve the solution. <a style="color: blue;" href="#tad" class="timeline-link">Click to see more!</a>
 												
 											</p>
 											
@@ -238,42 +239,42 @@
 								<dd>
 									<ul>
 										<li>What are the existing solutions to our problem in the market?</li>
-										<li>How can we study and analyse our data? and what are the best tools for this purpose?</li>
+										<li>How can we study and analyse our data? And what are the best tools for this purpose?</li>
 									
 									</ul>
 								
 								</dd>
 								<dt class="subs">Methods & Results</dt>
 								<dd>
-									<p><span class="image left"><img src="images/comp_cmd.png" alt="" /></span>NXP is not the only firm trying to build an automate recommender system using AI. Utilizing the compute resources and optimally allocate them to jobs is a challenge to many large
-										firms such as Qualcomm Technologies Inc. During the exploratory phase, we studied on how Qualcomm managed to tackle the similar issue as NXP, using a private product developed
-									   by their scientists. Obviously, Qualcomm has not published detail footsteps to solve their problem but studying their <a href="#ref">report</a> was helpful to get a better grasp on how the entire
-									   chip design cycle looks like and how important utilization is in today's competitive market. Furthermore, we observed which regression models could perform the best. This gave us
-									   a good understanding on what we can expect from different approaches. Moreover, We studied on what solutions can improve the job pending issue where jobs stay in a long queue 
-									   due to over-booking the resources in many jobs by users.</p>
-									<p><span class="image right"><img src="images/expert-cmd.png" alt="" /></span>Mark Jones is an expert working as the HPC -High Performance Computing- Systems Architect and team lead at NXP based in Texas, United States. His work is around operational management of LSF batch computing clusters and Platform Analytics.  
-									     During our project, he helped us in understanding the way of working of LSF and gave us great introductions and tutorials. With many meetings -usually 1-2 times a month-, he helped us to modify our project proposal, our approaches for the prototypes/models and find possibilities and pitfalls 
-										 we might face in our journey.  
+									<p><span class="image left"><img src="images/comp_cmd.png" alt="" /></span>NXP is not the only firm trying to build an automated recommender system using AI. Utilizing the compute resources and optimally allocating them to jobs is a challenge to many large
+										firms such as Qualcomm Technologies Inc. During the exploratory phase, we researched how Qualcomm approached a similar problem domain as NXP, using a private product developed
+									   by their scientists. Obviously, Qualcomm has not published detailed footsteps to solve their problem but reading their report <a style="color: blue;" href="#ref" class="timeline-link">[5]</a> was helpful to get a better grasp on what the entire
+									   chip design cycle looks like and how important utilization is in today's competitive market. Furthermore, we observed which regression models would perform the best. This gave us
+									   a good understanding on what we can expect from different approaches. Moreover, we analyzed which solutions can improve the job pending issue where jobs stay in a long queue 
+									   due to over-booking of resources by users.</p>
+									<p><span class="image right"><img src="images/expert-cmd.png" alt="" /></span>Mark Jones is an expert working as the <abbr title="High Performance Computing">HPC</abbr> Systems Architect and team lead at NXP based in Texas, United States. His work is around operational management of <abbr title="Load Sharing Facility">LSF</abbr> batch computing clusters and Platform Analytics.  
+									     During our project, he helped us in understanding the way of working of <abbr title="Load Sharing Facility">LSF</abbr> and gave us great introductions and tutorials. With fortnightly meetings, he helped us modify our project proposal, our approaches for the prototypes/models and find possibilities and pitfalls 
+										 we might face in our journey. I've made a brief report on one of our meetings which can be found <a href="files\M.J.pdf" style="color: blue;" target="_blank">here.</a>  
 										  </p>
 									<p><span class="image left"><img src="images/trend-cmd.png" alt="" /></span>During our exploratory data analysis, we started with analyzing one single user's resources usage and 
-									tried to analyze the trend on his memory usage in the past one month who was working at the same department as us and it was relatively easy to contact him for questions and monitor
-									 his jobs. later we built our first model on this user and tried to predict his memory and CPU usage(more about this will be discussed in the prediction phase). Then, we looked at a bigger picture
-									 by analyzing the jobs submitted by the top 5 projects in job submission counts in one month period. We found interesting trends and insights by finding correlations between days of week and project names 
-									 with memory and CPU usage. For example, at the end of the week, jobs tend to be heavier on memory and CPU usage, Also, we tried to cluster different users and projects based on their usage.
+									  analyzed the trend on his memory usage in the past one month. He was working at the same department as us and it was relatively easy to contact him for questions and monitor
+									 his jobs. Later, we built our first model on this user and predicted his memory and CPU usage (more details can be found in the prediction phase section). Then, we looked at a bigger picture
+									 by analyzing the jobs submitted by the top 5 projects in job submission counts in a one month period. We found interesting trends and insights by finding correlations between days of week and project names 
+									 with memory and CPU usage. For example, at the end of the week, jobs tend to be heavier on memory and CPU usage. Also, we tried to cluster different users and projects based on their usage.
 									These steps were useful in our model developments.</p>
 									<p><br/>Regarding tools selection, 'Python 3' and 'pyspark' were the main tools in the exploratory data analysis and development
-									   of the models. NXP uses <a href="https://www.splunk.com/">'Splunk Technology'</a> , a software to search, monitor and analyze machine-generated data via a web-style interface. This platform helps us to query the data from data lake 
-									   which is stored in the AWS environment. Therefore, knowing my way around AWS and 'Splunk' was essential for us to start our project which was done by mostly self studies and a few 
-									   introduction meetings organized specifically for us by NXP Data Analytics team. </p>
+									   of the models. NXP uses <a style="color: blue;" href="https://www.splunk.com/" target="_blank">'Splunk Technology'</a> , a software to search, monitor and analyze machine-generated data via a web-style interface. This platform helps us to query the data from data lake 
+									   which is stored in the AWS environment. Therefore, detailed knowledge on AWS and Splunk was an essential prerequisite for starting our project. This was done by individual research and a few 
+									   introductory meetings, organized specifically for us by NXP Data Analytics team. </p>
 								</dd>
 								
 								<dt class="subs">Conclusion</dt>
 								<dd>
-									<p> Exploratory Phase 
-										never ended throughout the whole project. We constantly had to study the way of working of job allocations by reading articles, self-studying and attending many stand-ups and meetings 
-										with experts to get a good grasp on the problem. Cutting the main problem into smaller problems was a great way of working. Instead of directly dealing with all the users and projects,
-										zooming in one single user in a short time window was helpful to understand the nature of the data. This allowed us to be able to reach out to the chosen user continuously during the exploring 
-										and have a better understanding of their behavior. <a href="#timeline">Back to the timeline</a>    
+									<p> The Exploratory Phase 
+										 continued throughout the whole project. We were constantly learning the way of working of job allocations by reading articles, self-studying and attending weekly stand-ups and meetings 
+										with experts to get a good grasp on the problem. Breaking down the main problem into sub-problems was an effective approach. Instead of directly dealing with all the users and projects,
+										zooming in one single user in a short time window was helpful to understand the nature of the data. This allowed us to reach out to the chosen user continuously during the exploring 
+										and have a better understanding of their behavior. <a style="color: blue;" href="#timeline" class="timeline-link">Back to the timeline</a>    
 								 </p>
 								</dd>
 							</dl>
@@ -295,25 +296,29 @@
 								<dt class="subs">Methods & Results</dt>
 								<dd>
 									<p><span class="image left"><img src="images/day_cmd.png" alt="" /></span>As mentioned in the exploratory phase, our first step toward building a prototype was isolating a single user and analyzing
-							          his recent submitted jobs. At first, we built a simple model by using his average memory and CPU usage in a rolling window of 30 and 15 days (anything less than a week would result in a bad predictions). This resulted in relatively
+							         his recently submitted jobs. At first, we built a simple model by using his average memory and CPU usage in a rolling window of 30 and 15 days (anything less than a week would result in poor predictions). This resulted in relatively
 									mediocre predictions (MAE was around 45GB memory). We discussed our findings and analysis with the user in a teams call. For 3 days, we used the 'Rolling Moving Average' solution
 								    and shadowed his jobs on a daily basis. Our simple model was able to keep an average MAE of 48GB memory used. Alternatively, the mean of all the r2 scores in the three days period was 43.61%. 
-								     </p>
+								     In the <a href="files\Product Report.pdf" style="color: blue;" target="_blank">Product Report,</a> you can find more about our results.</p>
 									<p><span class="image right"><img src="images/inspriation_cmd.png" alt="" /></span>Once we started with developing prototypes, we made a document on teams where the experts in the group including
-									 the project director and data engineers could add their 'gut feelings' toward which features from which datasets can be worth looking at. Since we were inexperienced with the 
-									way of working of LSF and the data, these inspirational ideas were great ropes to hold on and discover more.</p>
-									<p><span class="image left"><img src="images/peerview_cmd.png" alt="" /></span>Addition to our weekly peer review meeting with the project managers and mentors, every 8 weeks, we have a meeting with a group of data experts in the data analytics department who are outside of our project.
-									 We give them a brief technical presentation on the performance of our models so far. We walk them through the codes, add their feedbacks and get new ideas and approaches. I've also contacted
-									 an AI expert form Fontys, sir Luuk Derkx to give his opinion on the models by going in detailed code. Having the external expert's opinions could greatly benefit us both in gaining confidence 
-									in our current path and improvements in our approaches by their experience.</p>
+									 the project director and data engineers could add their 'gut feelings' toward which features from which datasets would be worth looking at. Since we were inexperienced with the 
+									way of working of <abbr title="Load Sharing Facility">LSF</abbr> and the data, these inspirational ideas were great ropes to hold on and discover more. <a href="files\gut.png" style="color: blue;" target="_blank">Here</a> you can find a picture of our inspiration wall.</p>
+									
+									<p><span class="image left"><img src="images/peerview_cmd.png" alt="" /></span>In addition to our weekly peer review meeting with the project managers and mentors, every 8 weeks, we had a meeting with a group of data experts in the data analytics department who are outside of our project.
+									 We gave them a brief technical presentation on the performance of our models thus far. We walked them through the codes, added their feedback and got new ideas and approaches. To gain additional external
+									 expertise, I reached out to an AI expert form Fontys, sir Luuk Derkx to give his opinion on the models. His perspective on how to further fine-tune the neural network was a great improvement to our model we hadn't yet considered.
+									 Consulting their experience was greatly beneficial in getting inspiration for following steps but also gaining confidence in our current approach.</p>
+									
 									<p><span class="image right"><img src="images/poc_cmd.png" alt="" /></span>After experimenting with the 'Rolling Moving Average' model, we built a pipeline containing
 									 multiple models such as 'RandomForest', 'Linear Regression', 'Lasso', 'ElasticNet', 'KNeighborRegressor' and 'GradientBoostingRegressor'. These models predicted the memory usage 
 									of one single user with our selected features such as 'working directory', 'jobid', 'day of week' and 'batch-queue'. 'RandomForest' did the best job with an average r2 score of 57% and a MAE of
 								    35GB. This was an improvement comparing to our early 'Rolling Moving Average' model. Later we decided to combine both these models and insert the 'Rolling Moving Average' as a feature into the 'RandomForest' model
 								    but there was not much improvement and we decided for the time being exclude the average values from the models due to a low rate of feature importance in the 'RandomForest' model (0.05).  </p>
+									
 									<p><span class="image left"><img src="images/prototypinggg_cmd.png" alt="" /><img src="images/scamper_cmd.png" alt="" /></span>Our next project started by looking at a bigger dataset. Instead 
 									of just one single user, we studied top 5 projects by job counts in a single month with thousands of users. This was a relatively large dataset with more than 2 million rows and about 110 different features. After 
-								    weeks of cleaning and preparing, we built a pipeline which can accept any size of RTM dataset, clean, prepare and automatically select the best features to feed into the models by using the 'SelectKBest' and 
+								    weeks of cleaning and preparing, we built a pipeline which can accept any size of  <abbr title="Recovery Termination Manager">RTM
+									</abbr>   dataset, clean, prepare and automatically select the best features to feed into the models by using the 'SelectKBest' and 
 								   'f_regression' techniques from sklearn library, 'pearson correlation' and 'P_value' methods. Once the top features are selected, data will be split into train and test chunks and 
 								    fed into 6 different models as mentioned above along with an Artificial Neural Net model with 5,569 parameters. With respect to our findings, we decided to choose our top two models to improve further, namely
 									 'RandomForest' and 'Artificial Neural Network' The pipeline was built in 6 sprint iterations (around 8 weeks long) with each improving our accuracy
@@ -326,9 +331,16 @@
 								<dd>
 									<p>The main issues with the 'Rolling Moving Average' approach for the single user was that the user does not have a consistent job volume throughout the week. Some days there are large spikes in his memory usage which is impossible to 
 									   predict and some days he has consistent low volume jobs which it leads to a relatively good performance. The memory usage is too chaotic for such model. Regarding our pipeline with 'RandomForest' and 'Artificial Neural Network', we hit a plateau with 
-									   64% R2 score and MAE of 325 GB as the best result possible. After discussing the results in the form of presentations to both our data experts and to the whole IT-department of NXP, we conclude that 
-									   with the current data, this would be the best achievable result. To improve the models, we believe that new valuable features such as the list of the tools being used by users in each job submitted along with 
-									   the tool's resource consumptions could be an important key to our predictions. At the moment, NXP can not access nor store any data into their data lakes concerning tool's information.    <a href="#timeline">Back to the timeline</a> </p>
+									   64% R2 score and MAE of 32.5 GB as the best result possible ( In the <a href="files\Product Report.pdf" style="color: blue;" target="_blank">Product Report</a> you can find more about our results.). 
+									   <dt id="advice" class="subs">Advice</dt></p>
+									<p>After discussing the results in the form of presentations to both our data experts and to the whole IT-department of NXP, we conclude that 
+										with the current data, this would be the best achievable result. To improve the models, we believe that new valuable features such as the list of the tools being used by users in each job submitted along with 
+										the tool's resource consumptions could be an important key to our predictions. At the moment, NXP can not access nor store any data into their data lakes concerning tool's information. Furthermore, combining regression and classification 
+										 by using models such as <abbr title="Classification and Regression Tree">CART</abbr><a href= "#ref" style="color: blue;" class="timeline-link">[4]</a> could take the prediction phase to the next level. Meaning, the model categorizes 
+										 the users into different groups base on their job's volume and tools being used for instance, and then uses a regression model trained for each specific group. This could improve the models 
+										  considering all the memory-used values are too volatile for a single model to predict. For this reason, we decided to also experiment with models on a project level rather than 'one model to rule them all'.
+										  <a style="color: blue;" href="#timeline" class="timeline-link">Back to the timeline</a> </p>
+								    </p>
 								</dd>
 							</dl>
 
@@ -357,16 +369,17 @@
 									<p><span class="image left"><img src="images/testAB_cmd.png" alt="" /><img src="images/test_cmd.png" alt="" /></span> We discussed two approaches when it comes to testing. Firstly,we can perform an A/B testing. We are planning to try all the different models together to see which alternative performs
 										the best. This will be done on a large scale dataset and we will keep them as random as possible. Secondly, we are planning to make the models
 										available to use to a specific set of users. These people will be selected from the top 5 projects on job counts since the models are trained on them. Next, we can expand the focus group by 
-										bringing lower projects either randomly or those with the highest over/under estimations at their submission time in the past. Then we will evaluate the results by applying EDA techniques within
+										bringing lower projects either randomly or those with the highest over/under estimations at their submission time in the past. Then we will evaluate the results by applying <abbr title="Exploratory Data Analysis">EDA</abbr>  techniques within
 										the data analytics team and using interviews or questionnaires within the target group and ask for their feedbacks.   </p>
 									<dt class="subs" id="design">Deployment Design</dt>
 									<p>Figure 1, as shown below, is a sketch of our deployment process. Users submit jobs into 'bsub'. From there, jobs enter a Queue, and based on their priority,
-										they exit Pending and start Running. At the end, jobs can either be marked complete or be forcefully exited by the user. In each one of these 3 steps, the RTM data lake 
-										will be updated automatically and the data will be sent to the RTM database, which is hosted on the AWS. Models will Query the data out the RTM database and update the cache. On the 
+										they exit Pending and start Running. At the end, jobs can either be marked complete or be forcefully exited by the user. In each one of these 3 steps, the  <abbr title="Recovery Termination Manager">RTM</abbr>   data lake 
+										will be updated automatically and the data will be sent to the  <abbr title="Recovery Termination Manager">RTM</abbr>   database, which is hosted on the AWS. Models will Query the data out the  <abbr title="Recovery Termination Manager">RTM</abbr>   database and update the cache. Using cache helps 
+										us to retrieve the predicted values from the models faster and it can store the data for a short period of the time.  On the 
 										left section of the sketch, 'esub' is run by 'bsub' and it queries the parameters out of cache and returns them back to the 'bsub', either directly through the cache, 
 										or indirectly through the REST API. Ideally, the 'esub' should be fast (i.e. < 1sec) and should not wait for the cache (or REST API)
 										to respond. In case of a time out, it should use reasonable default parameters which are usually provided by the user at the submission time. Using the 'REST API' is optional and for the time 
-										being, we believe that it could be a good idea since the API allows for the addition of more complex logic. Also, updating 'REST API' is much easier than updating the 'esub'. 
+										being, we believe that it could be a good idea since the API allows for the addition of more complex logic. Also, updating 'REST API' is much easier than updating the 'esub'.
 									</p>
 
 									<figure>
@@ -383,7 +396,7 @@
 									<p> Concluding this section is a tough job since we have not started implementing it. As far as our expectation, we believe the testing and deployment proposal look promising
 										for the time being. Although, there are some concerns which i covered in the last section about the 'esub's speed. In the next few weeks, we are 
 										going to address this risk, and propose the potential solutions. Deployment falls out of our team's expertise, therefore, we are going to collaborate with another team 
-										inside the IT-department to further discuss the possibilities and pitfalls.    <a href="#timeline">Back to the timeline</a>    
+										inside the IT-department to further discuss the possibilities and pitfalls.    <a style="color: blue;" href="#timeline" class="timeline-link">Back to the timeline</a>    
 								 </p>
 								</dd>
 							</dl>
@@ -392,7 +405,41 @@
 
 							
 									<div class="box">
-										<h2 id="here">Conclusion & self-reflection</h2>
+										<h2 class="subs">Final Conclusion </h2>
+										<p>
+
+											<h4 class="subs">Sub-questions Conclusion</h4>
+											<p>
+												During the  <a style="color: blue;" href="#explore" class="timeline-link">Exploratory Phase</a>, we started our project by studying existing solutions in the market. As mentioned before,
+												Qualcomm faced the same main question as NXP more or less. They managed to partially automate their job allocation systems by using machine learning techniques as a private product. Since NXP and 
+												Qualcomm have a long history and business collaborations, their reports are available to us to study. Although, they do not share details on their exact footsteps in their project, they shared a
+												great information on the importance of the project as a whole, and the consequences of using the old way of working which is letting users specify their needs. They shared what models they used and a brief
+												conclusion on their performances. As far as I'm aware, this report is not available in public and it's a private property of NXP but you can find the name and the authors information in the Reference
+												section <a style="color: blue;" href="#ref" class="timeline-link">[5]</a> at the end of this report. Furthermore, in the early weeks, we've received various introductions and courses 
+												to understand the business, different datasets and tools such as AWS, Splunk and Vertica (more information in the table of Assessment)<br>
+												During the <a style="color: blue;" href="#prediction" class="timeline-link">Prediction Phase</a>, we explored solutions without machine learning techniques such as 
+												simple rolling moving averages of the memory used in the past in the user and project levels. Then, we experimented with 7 different regression models and evaluated their 
+												results on a pilot study (single user) and later in the project levels. We built pipelines to clean and prepare the data, select the best features automatically rather than hard-coding them
+												by different techniques (mentioned in the prediction phase) , and fed into our models. We improved our models from low  43% to as high as 64% (average R2 score) by feature engineering and fine-tuning.
+												Since this project will be continued after our internship, we gave our <a style="color: blue;" href="#advice" class="timeline-link">Advise</a> on what they can do in future to improve and pick up where we left.
+												<br> In the testing and <a style="color: blue;" href="#tad" class="timeline-link">Deployment Phase </a> we discussed what are our testing methods namely, A/B testing and Field trial
+												by using the models as a beta product to a specific group of users. Also, we've built an <a style="color: blue;" href="#design" class="timeline-link">Architecture Plan</a>  for our models deployment to fit the solution to the current workflow.  
+												
+
+											</p>
+											<h4 class="subs">Main question Conclusion</h4>
+											To refresh your memory, the main question was, 'Can we automate the job allocation system using machine learning techniques to decrease over and 
+											under specifications of resources by the users which could lead to a better optimization? And How can we achieve this goal?'<br>
+											Short answer, yes. Long answer, We have developed a better alternative using machine learning models. These solutions are indeed performing better than the previous
+											way of working which was letting the users specify their required resources. But there is a catch, these models have relatively high margin errors and 
+											NXP needs to decrease them before adapting this solution and letting all the users access this service. NXP and I believe that this internship created a great
+											foundation for this project to further evolve and has the potential to be used as an AI service to all the users. -At the moment, NXP is planning to use this
+											solution as a beta prototype to a specific set of users.- 
+											Our team has proposed few ways to further improve the models which I covered before in the prediction and result phase.
+										 
+							 
+										</p>
+										<h2 id="here" class="subs">Evaluation & self-reflection</h2>
 										<p>NXP is looking for a state-of-art solution which is going to be developed and deployed for the first time. This was challenging, since NXP was not 
 											certain what outcome they could expect. At start, the problem was clear but it wasn't clear how to approach it, nor
 											what is possible. This led to a lot of time spent on researching and trial and error methods. Most of our work and brain-storming process required 
@@ -403,6 +450,7 @@
 											 was stressful at the beginning. The more meetings i attended, the more comfortable and confident I became. 
 											Although I believe I've managed to improve my soft skills greatly, there is much more to learn in this aspect. This project ensured me about my passion for data science specially 
 											machine learning and AI. Many nights I lost track of time working on my laptop trying to build and test different models. This made me stronger in my decision on studying AI as my masters in 2022.
+											Also during my internship, I've taken a few courses and received certificates from NXP which you can find <a href="files\certificates.pdf" style="color: blue;" target="_blank">here (Certificates).</a> 
 
 										    </br>Below, I've summarized a reflection of my personality
 											during this internship project and underneath, as shown in the figure 2, I've used the SWOT methodology to reflect on the project itself.  
@@ -448,21 +496,7 @@
 										<blockquote style="font-family: Billy Ohio ;">"To be filled ...</blockquote>
 
 										<hr />
-										<h4 class="subs">Conclusion on the main research question</h4>
-										<p>
-											To refresh your memory, the main question was, 'Can we automate the job allocation system using machine learning techniques to decrease over and 
-											under specifications of resources by the users which could lead to a better optimization? And How can we achieve this goal?'<br>
-											Short answer, yes. Long answer, We have developed a better alternative using machine learning models. These solutions are indeed performing better than the previous
-											way of working which was letting the users specify their required resources. But there is a catch, these models have relatively high margin errors and 
-											NXP needs to decrease them before adapting this solution and letting all the users access this service. NXP and I believe that this internship created a great
-											foundation for this project to further evolve and has the potential to be used as an AI service to all the users. -At the moment, NXP is planning to use this
-											solution as a beta prototype to a specific set of users.- 
-											Our team has proposed few ways to further improve the models which I covered before in the prediction and result phase. Furthermore, there are other ways to
-											improve the solutions which are outside of the scope of this project and I'm not allowed to go to details to avoid disclosing confidential information.  
-											<a  href="#intro">Back to the top</a>
-										 
-							 
-										</p>
+										
 									</div>
 									
 									<div class="box">
@@ -474,51 +508,52 @@
 											 
 											</tr>
 											<tr>
-											  <td><a href="#problem">Knowledge and Insight (Analysis/Problem definition) &#x1F446;</a></td>
-											  <td style="font: 16px/18px Arial">In my <a href="files\Project Plan.pdf">project plan</a>, you can find additional details about the goal/scope of the project with information about the team members involved in this project.
+											  <td><a style="color: blue;" href="#problem" class="timeline-link">Knowledge and Insight (Analysis/Problem definition) &#x1F446;</a></td>
+											  <td style="font: 16px/18px Arial">In my <a style="color: blue;" href="files\Project Plan.pdf" target="_blank">project plan</a>, you can find additional details about the goal/scope of the project with information about the team members involved in this project.
 												    </td>
 											 
 											</tr>
 											<tr>
-											  <td><a href="#recommandation">Knowledge and Insight (Advise) &#x1F446;</a></td>
+											  <td><a style="color: blue;" href="#advice" class="timeline-link">Knowledge and Insight (Advise) &#x1F446;</a></td>
 											  <td style="font: 16px/18px Arial">Every week thursdays we had a meeting with our mentor, project managers and two data analytics experts to report our weekly progress and receive advice and 
-												feedbacks. The week after, we show the results on the feedbacks. There is also the letter of recommendations section where I've asked my co-worker and mentors to give their opinion about me.</td>
+												feedbacks. The week after, we show the results on the feedbacks. There is also the letter of <a style="color: blue;" href="#recommandation" class="timeline-link">recommendations</a> section where I've asked my co-worker and mentors to give their opinion about me.</td>
 											 
 											</tr>
 											<tr>
-												<td><a href="#design">Knowledge and Insight (Design) &#x1F446;</a></td>
+												<td><a style="color: blue;" href="#design" class="timeline-link">Knowledge and Insight (Design) &#x1F446;</a></td>
 												<td style="font: 16px/18px Arial">There are many designs/methods considered during our development phase. I've taken into the account expert's opinions within the data analytics team
 												, self-studying reports and research papers (scroll down to the Reference section) and my own experience gained from the past projects at the university. Eventually, I've built
-											     a design for our deployment phase with the help of my team.  </td>
+											     a design for our deployment phase with the help of my team. Furthermore, in the  the <a style="color: blue;" href="files/Product Report.pdf" target="_blank">Product Report</a> you can find my design on an <abbr title="Artificial Neural Network">ANN</abbr>.
+												  </td>
 											
 											  </tr>
 											  <tr>
-												<td><a href="files\Product Report.pdf">Knowledge and Insight (Realization) &#x1F446;</a></td>
-												<td style="font: 16px/18px Arial">We still have 6-8 more weeks remaining to the end of the project, as discussed in the <a href="#preamble">Preamble section</a>
-												 Therefore, at the moment of writing this report, we haven't deployed our prototype yet. Although, I can show you the result of our models in a relatively small scale.
+												<td><a style="color: blue;" href="files\Product Report.pdf" target="_blank">Knowledge and Insight (Realization) &#x1F446;</a></td>
+												<td style="font: 16px/18px Arial">We still have 6-8 more weeks remaining to the end of the project, as discussed in the <a style="color: blue;" href="#preamble" class="timeline-link">Preamble section</a>
+												 Therefore, at the moment of writing this report, we haven't deployed our prototype yet. Although, you can see the result of our models in a relatively small scale.
 												 To open the Product Report, click on the link on the left. </td>
 											
 											  </tr>
 											  <tr>
-												<td><a href="files\Jira-scrum.pdf">Knowledge and Insight (Manage& Control) &#x1F446;</a></td>
-												<td style="font: 16px/18px Arial">On Jira <a href="#foot2">[2]</a>, we have a scrum board where all of our sprints along with tasks are listed. You can find a snapshot of my tasks by clicking on the link. Furthermore, 
+												<td><a style="color: blue;" href="files\Jira-scrum.pdf" target="_blank">Knowledge and Insight (Manage& Control) &#x1F446;</a></td>
+												<td style="font: 16px/18px Arial">On Jira <a style="color: blue;" href="#foot2" class="timeline-link">[2]</a>, we have a scrum board where all of our sprints along with tasks are listed. You can find a snapshot of my tasks by clicking on the link. Furthermore, 
 												you can find a snapshot to my contribution on Git.</td>
 											
 											  </tr>
 											  <tr>
-												<td><a href="#reflection">Judgement &#x1F446;</a></td>
+												<td><a style="color: blue;" href="#reflection" class="timeline-link">Judgement &#x1F446;</a></td>
 												<td style="font: 16px/18px Arial">I've tried to run my project with appropriate research strategies (CMD Methods Pack). I've used SWOT methodology to judge the project and myself.</td>
 											
 											  </tr>
 											  <tr>
-												<td><a href="files\meetings.pdf">Communication &#x1F446;</a></td>
+												<td><a style="color: blue;" href="files\meetings.pdf" target="_blank">Communication &#x1F446;</a></td>
 												<td style="font: 16px/18px Arial">During our weekly progress call with our mentors, I've tried to do my best to report our weekly progress orally and also by sharing my code's 
 												results. Every week, I made meeting notes about our agenda, what actions need to be taken, and what are the expectation for the next week. You can find a snapshot to some of my 
-												notes by clicking on the link on the left.</td>
+												notes and one of our presentations to the HPC team during a iteration review meeting by clicking on the link on the left.</td>
 											
 											  </tr>
 											  <tr>
-												<td><a href="#here">Learning ability &#x1F446;</a></td>
+												<td><a style="color: blue;" href="#here" class="timeline-link">Learning ability &#x1F446;</a></td>
 												<td style="font: 16px/18px Arial">During these 5 months, I've noticed how much I improved and got confident in my abilities in machine learning. But I'm only at the beginning of this journey 
 												and I believe I've packed precious experiences during my Bachelor specially my Internships both at NXP and PSV. </td>
 											
@@ -526,7 +561,7 @@
 
 										  </table>
 
-										  <p style="color:black;font-size:15px;" id="foot2">[2]: <a href="https://www.atlassian.com/software/jira" target="_blank"> Jira</a> is a proprietary issue tracking product developed by Atlassian that allows bug tracking and agile project management.</p> 
+										  <p style="color:black;font-size:15px;" id="foot2">[2]: <a style="color: blue;" href="https://www.atlassian.com/software/jira" target="_blank"> Jira</a> is a proprietary issue tracking product developed by Atlassian that allows bug tracking and agile project management.</p> 
 
 									</div>
 							
@@ -534,24 +569,27 @@
 								<h2 id="ref">References</h2>
 								<ol style="font: 16px/18px courier">
 									<li>
-									   <p>Lavegno, L. ,Martin, G. , Scheffer, L. , <cite>Electronic Design Automation for Integrated Circuits Handbook, Taylor & Francis</cite> (2006)</p>
+									   <p>Lavagno, L., Martin, G., & Scheffer, L. (2006). Electronic Design Automation for Integrated Circuits Handbook - 2 Volume Set (Industrial Information Technology) (1st ed.). CRC Press.</p>
 									</li>
 									<li>
-									   <p>Scheather S., <cite>A Modern Approach to Regression</cite>, (2009)</p>
+									   <p>Géron, A. (2017). Hands-On Machine Learning with Scikit-Learn and TensorFlow: Concepts, Tools, and Techniques to Build Intelligent Systems (1st ed.). O’Reilly Media.</p>
 									</li>
 								
 									 <li>
 										<p>Carraso, D. , <cite>Exploring Splunk: Search Processing Language (SPL) Primer and CookBook</cite>, New York: CITO Research, (2012)</p>
 									 </li>
 									 <li>
-										<p>Lohn W.Y., <cite>Classification and Regression trees. WIRE Data Mining and Knowledge Discovery</cite>, Vol 1, pp 14-23, (2011)</p>
+										<p>Loh, W. (2011). Classification and regression trees. WIREs Data Mining and Knowledge Discovery, 1(1), 14–23. <a style="color: blue;" href="https://doi.org/10.1002/widm.8" target="_blank">link</a></p>
 									 </li>
 									 <li>
 										<p>Taghvavi,T., Lupetini,M., Kretchmer,Y. , <cite>Compute Job Memory Recommender System Using Machine Learning </cite>, Qualcomm Technologies Inc., (2019)</p>
 									 </li>
+									 <li>
+										 <p>Next Day Video. (2016, May 10). Pre-Modeling: Data Preprocessing and Feature Exploration in Python [Video]. <a style="color: blue;" href=" https://www.youtube.com/watch?v=V0u6bxQOUJ8&t=1426s" target="_blank">YouTube</a>.</p>
+									 </li>
 									 
 								 </ol>
-								 <a  href="#intro">Back to the top</a>
+								 <a style="color: blue;"  href="#intro" class="timeline-link">Back to the top</a>
 
 
 							</div>
